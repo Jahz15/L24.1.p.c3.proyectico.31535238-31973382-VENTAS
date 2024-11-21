@@ -42,10 +42,11 @@ export default class Cl_tienda{
     }
 
     calcularAcumulado(){
+        let acumulado = this.montoCaja;
         for(let i = 0; i < this.ventas.length; i++){
-            this.montoCaja += this.ventas[i].calcPrecioTotal();
+            acumulado += this.ventas[i].calcPrecioTotal();
         }
-        return this.montoCaja;
+        return acumulado;
     }
 
 }
