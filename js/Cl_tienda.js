@@ -41,12 +41,12 @@ export default class Cl_tienda{
         return this.ventas.filter(venta => venta.cnArticulos == 1).map(venta => venta.nombreCliente);
     }
 
-    calcularAcumulado(){
-        let acumulado = this.montoCaja;
+    calcularMontoTotal(){
+        let montoTotal = this.montoCaja;
         for(let i = 0; i < this.ventas.length; i++){
-            acumulado += this.ventas[i].calcPrecioTotal();
+            montoTotal += this.ventas[i].calcPrecioTotal();
         }
-        return acumulado;
+        return montoTotal;
     }
 
 }

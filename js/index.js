@@ -42,7 +42,7 @@ let clientesDeUnArticulo =(tienda, salida) =>{
 }
 }
 
-let montoCaja =(tienda, salida) => salida.innerHTML = `<br>Monto final en caja: ${tienda.calcularAcumulado().toFixed(2)}$`;
+let montoCaja =(tienda, salida) => salida.innerHTML = `<br>Monto final en caja: ${tienda.calcularMontoTotal().toFixed(2)}$`;
 
 let agregarVenta = (tienda) =>{
     let nombreCliente = prompt("Ingrese el nombre del cliente");
