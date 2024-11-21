@@ -46,7 +46,7 @@ export default class Cl_tienda{
         for(let i = 0; i < this.ventas.length; i++){
             acumulado += this.ventas[i].calcPrecioTotal();
         }
-        return acumulado;
+        return acumulad;
     }
 
 }
